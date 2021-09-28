@@ -4,7 +4,96 @@
 <head>
     <meta charset="utf-8" />
     <title>Rémi Lecomte: CV</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        @media only screen and (max-width: 991px) and (min-width: 0px) {
+	.content{
+	  max-width: 90%;
+	}
+	th{
+		font-size: 30px;
+	}
+	button{
+		font-size: 30px;
+		text-align:center;
+	}
+	div#description{
+		font-size: 40px;
+	}
+}
+@media only screen and (max-width: 2000px) and (min-width: 991px) {
+	.content{
+		max-width: 70%;
+		
+	}
+	button{
+		font-size: 20px;
+		text-align:center;
+	
+	}
+	
+}
+body{
+	color:white;
+	 background-color:rgb(105, 5, 4);
+}
+.content{
+	 margin: auto;
+	 border-style:solid;
+	 border-width:10px;
+	 border-color:black;
+	 font-family:Helvetica;
+}
+section>h2{
+	border-color:black;
+	border-style:solid;
+	border-width:10px;
+	border-top-width:15px;
+	margin-right:-20px;
+	margin-left:-20px;
+	padding-left:10px;
+	padding-top:5px;
+	padding-bottom:5px;
+}
+section{
+	padding:10px;
+	
+}
+table{
+	table-layout: fixed;
+	width:100%;
+	border: 5px solid black;
+    border-collapse: collapse
+}
+ th,td {
+        /*padding: 10px;*/
+        border: 2px solid black;
+        border-collapse: collapse;
+      }
+
+table#interetsTable button{
+	width:100%;
+	padding:10%;
+}
+
+button{
+	color:white;
+	background-color:rgb(105, 5, 4);
+	text-decoration: underline;
+}
+button:hover{
+	color:yellow;
+}
+/*body
+{
+	text-align:center;
+	width:50%;
+	background-color:blue;
+}*/
+div#description{
+	text-align:left;
+	padding-left:20px;
+}
+    </style>
 </head>
 <body>
     <div class="content">
