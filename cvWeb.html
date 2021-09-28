@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+
+<html lang="fr" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Rémi Lecomte: CV</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="content">
+        <section>
+            <h3>
+            Nom: Lecomte<br>
+            Prénom: Rémi<br>
+            Âge: 19<br>
+            Email: remi.lecomte.etu@univ-lille.fr<br>
+            </h3>
+        </section>
+        <section>
+            <h2>Compétences informatiques</h2>
+            <table id="competencesTable">
+                <tr>
+                    <th></th>
+                    <th>débutant</th>
+                    <th>moyen</th>
+                    <th>avancé</th>
+                    <th>expert</th>
+                    <th>maîtrise</th>
+                </tr>
+                <tr>
+                    <th>JAVA</th>
+                    <th></th>
+                    <th></th>
+                    <th>X</th>
+                    <th></th>
+                    <th></tl>
+                </tr>
+                <tr>
+                    <th>C</th>
+                    <th></th>
+                    <th>X</th>
+                <th></th>
+                    <th></th>
+                    <th></tl>
+                </tr>
+                <tr>
+                    <th>Javacript</th>
+                    <th>X</th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+                <tr>
+                    <th>HTML</th>
+                    <th></th>
+                    <th>X</th>
+                    <th></th>
+                    <th></th>
+                    <th></tl>
+                </tr>
+                <tr>
+                    <th>CSS</th>
+                    <th></th>
+                    <th>X</th>
+                    <th></th>
+                    <th></th>
+                    <th></tl>
+                </tr>
+                <tr>
+                    <th>SQL</th>
+                    <th></th>
+                    <th>X</th>
+                    <th></th>
+                    <th></th>
+                    <th></tl>
+                </tr>
+            
+            </table>
+            <br>
+        </section>
+        <section>
+            <h2>
+                Formation
+            </h2>
+                <h3>
+                    Parcours:
+                </h3>
+                    <ul>
+                        <li>2020-Présent: DUT informatique<br>IUT A de Villeneuve d'Ascq, université de Lille</li>
+                        <li>Baccalauréat scientifique spécialité informatique et science du numérique, session 2020, mention très bien, mention très bien<br> Cité scolaire Voltaire de Wingles</li>
+                        <li>Brevet des collège session 2017, mention très bien<br> Collège Antoine de Saint-Exupéry, Douvrin</li>
+                    </ul>
+            <h3>Langues:</h3>
+                <ul>
+                    <li>Anglais: bonnes compétence en anglais dont une très bonne compréhension</li>
+                    <li>Allemand: niveau scolaire moyen</li>
+                </ul>
+        </section>
+        <section>
+            <h2>Compétences personnelles</h2>
+            <ul>
+                <li>imaginatif</li>
+                <li>sérieux</li>
+                <li>discipliné</li>
+                <li>calme</li>
+                <li>curieux</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Projets et expériences personnelles</h2>
+            <ul>
+                <li>Conception, en binôme, d'un jeu ludo-éducatif dans le cadre de la première année de DUT</li>
+                <li>Participation à un mini-projet AGILE de trois jours dans le cadre de la seconde année de DUT</li>
+                <li>Création de pages web dans le cadre de la spécialisation ISN de terminal et de la première année de DUT</li>
+                <li>Création, à l'aide de tutoriels, d'un jeu de plates-formes 2D sur le logiciel Unity en utilisant le langage C#</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Centres d'intérêts</h2>
+            <table id="interetsTable">
+                <tr>
+                    <th><button id='lectureButton'>Lecture</button></th>
+                    <th><button id='jeuxVideoButton'>Jeux vidéos</button></th>
+                    <th><button id='ecritureButton'>Ecriture</button></th>
+                    <th><button id='musiqueButton'>Musique</button></th>
+                </tr>
+                <tr>
+                    <th colspan="4"><div id="description"></div></th>
+                </tr>
+            </table>
+        </section>
+    </div>
+      <script>
+    	var div=document.getElementById("description");
+        changeLectureDescription();
+
+        document.getElementById("jeuxVideoButton").addEventListener("click", changeGameDescription);
+        document.getElementById("musiqueButton").addEventListener("click", changeMusiqueDescription);
+        document.getElementById("lectureButton").addEventListener("click", changeLectureDescription)
+        document.getElementById("ecritureButton").addEventListener("click", changeEcritureDescription);
+        function changeGameDescription(){
+            div.innerHTML="Jeux vidéos préférés: <ol><li>Super Smash Bros</li><li>Touhou Project</li><li>The Legend of Zelda</li><li>Metroid</li><li>Fire Emblem</li><li>Megaman</li></ol>";
+        }
+        function changeLectureDescription(){
+            div.innerHTML="Dernières lectures:<br><ul><li>La guerre et la paix (en cours)</li><li>Le rameau d\'or (en cours)</li><li>A certain magical Index: New Testament tome 3(fini, lu en anglais)</li><li>Le rouge et le noir(fini)</li><li>Adachi and Shimamura tome 4 (fini, lu en anglais)</li></ul>";
+        }
+        function changeEcritureDescription(){
+            div.innerHTML="Actuellement en train d'essayer d'écrie un livre de fantasy au XIXème siècle. Actuellement 70 pages.";
+        }
+        function changeMusiqueDescription(){
+            div.innerHTML="Artistes préférés: <ul><li>Yuki Kajiura</li><li>Green Day</li><li>Kalafina</li><li>The Beatles</li><li>Azusa Tadokoro</li><li>ZUN</li><li>Red Hot Chili Peppers</li></ul>";
+        }
+    </script>
+</body>
+</html>
